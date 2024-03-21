@@ -1,12 +1,13 @@
 
 import './App.css'
+import MyCarousel from './components/Carousel'
 
 function App() {
 
   return (
     <>
-    <div>
-      <h1>Body</h1>
+    <div className='w-[90%] m-auto'>
+      <MyCarousel autoPlay interval showArrows={true} showThumbs={false} showStatus={false} infiniteLoop  showIndicator={false} />
       
     </div>
      
