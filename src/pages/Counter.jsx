@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from "react"
+import {  useEffect, useRef, useState } from "react"
 
 
 const Counter = () => {
+   
     let [count, setCounter] =useState(0)
     let [data, setData]= useState(100)
     let count2= useRef()
@@ -24,6 +25,7 @@ const Counter = () => {
     },[count,data])
   return (
     <div className="flex justify-center items-center  text-3xl  flex-col h-[100vh] ">
+   
       <input type="text" ref={count2}/>
        <div className="flex flex-col  text-center border-3 border-black  p-10">
              Count:{count}

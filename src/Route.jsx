@@ -9,6 +9,9 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Cart from './pages/Cart';
 import Counter from './pages/Counter/';
+import UseContext from './pages/UseContext';
+import PropsParents from './components/PropsParents';
+import ReduxCounter from './components/redux/ReduxCounter';
 
 const MyRoutes = () => {
   return (
@@ -25,7 +28,9 @@ const MyRoutes = () => {
            
           </Route>
           <Route path='/counter' element={<Counter/>}/>
-
+          <Route path='/LoginData' element={<UseContext/>}/>
+          <Route path='/info' element={<PropsParents/>}/>
+          <Route path='/reduxCounter' element={<ReduxCounter/>}/>
 
             
         </Routes>
